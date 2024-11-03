@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    width: 100%;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.bonsai img {
+    height: 40px;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+}
+
+.options p {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons .log,
+.buttons .start {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons .log {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.buttons .start {
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.main {
+    padding: 40px;
+    text-align: center;
+}
+
+.description h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.pricing > div {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.pricing h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    margin: 10px 0;
+}
+
+.pricing .info {
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+}
+
+.pricing .info .dollar {
+    font-size: 0.6em;
+    margin-right: 5px;
+}
+
+.pricing .info .time {
+    font-size: 0.6em;
+    margin-left: 5px;
+}
+
+.requirements {
+    font-size: 0.9em;
+}
+
+.requirements span {
+    color: #4caf50;
+}
+
+.pricing button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.charging {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charging h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+
+
+.collaborators, .partners, .tax {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.collaborators h3, .partners h3, .tax h3 {
+    font-size: 1.2em;
+}
+
+.money h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.money span {
+    font-size: 0.6em;
+}
+
+
+.business-box {
+    background-color: #dafbfa;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 350px;
+    padding: 60px 20px;
+    border-radius: 15px;
+    opacity: 60%;
+}
+
+.business-box .first-row p {
+    font-size: 1.5em;
+}
+
+.business-box .first-row span {
+    font-weight: bold;
+}
+
+.business-box .second-row button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.questions {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.questions .faq-box {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.questions details {
+    margin-bottom: 15px;
+    padding: 10px;
+    max-width: 800px;
+    width: 100%;
+    font-size: x-large;
+}
+
+.questions summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.questions p {
+    padding-top: 10px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px) {
+    .header, .footer, .pricing, .buttons, .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing > div {
+        width: 100%; 
+        height: auto;
+    }
+
+    .charging {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .questions .faq-box, .footer {
+        width: 100%;
+    }
+
+    .business-box {
+        width: 100%;
+        margin-left: 0;
+        padding: 40px 15px;
+    }
+}
